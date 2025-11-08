@@ -4,6 +4,14 @@
   flex-direction: column;
   background-color: #f8f9fb;
 
+  .custom-heading {
+  color: #e85b36;
+  font-weight: bold;
+  font-size: 20px; /* You can adjust to 18px or 16px if you want smaller */
+  line-height: 1.4;
+  margin: 0;
+}
+
   .project {
     display: flex;
     width: 100%;
@@ -43,13 +51,24 @@
       }
 
       p {
-        font-size: 1rem;
+        font-size: 0.9rem;
         color: #333;
         line-height: 1.7;
         margin-bottom: 15px;
+          text-align: left;
+
       }
     }
   }
+  .about-text {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  text-align: left;
+  white-space: normal; /* ensures <br> line breaks are respected */
+}
+
 
   /* Responsive layout */
   @media (max-width: 992px) {
@@ -65,6 +84,259 @@
       .project-text {
         padding: 40px 20px;
       }
+    }
+  }
+}
+
+.about-company-section {
+  position: relative;
+  background-image: url("../../../assets/a_i.jpg"); /* replace with your image */
+  background-size: cover; /* keeps proportions natural */
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 120px 0;
+  overflow: hidden;
+}
+
+/* Dark overlay for readability */
+.about-company-section .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* Layout and text positioning */
+.about-company-section .container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-content {
+  max-width: 650px;
+}
+
+.about-company-section h6 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  opacity: 10;
+}
+
+.about-company-section h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about-company-section h2 span {
+  color: #f74d22; /* orange title */
+}
+
+.about-company-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  color: #f5f5f5;
+}
+
+/* Stats row */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.stat-box {
+  text-align: center;
+  flex: 1;
+  min-width: 130px;
+}
+
+.stat-box h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.stat-box p {
+  font-size: 0.95rem;
+  color: #ddd;
+}
+    p {
+        font-size: 2rem;
+        color: #f8f6f6;
+        line-height: 1.7;
+        margin-bottom: 15px;
+          text-align: left;
+
+      }
+
+/* ✅ Responsive */
+@media (max-width: 992px) {
+  .about-company-section {
+    padding: 80px 0;
+    background-position: center center;
+  }
+
+  .about-content {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .stats {
+    justify-content: center;
+  }
+
+  .stat-box {
+    min-width: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-company-section h2 {
+    font-size: 2rem;
+  }
+
+  .about-company-section p {
+    font-size: 1rem;
+  }
+
+  .stat-box h3 {
+    font-size: 2rem;
+  }
+}
+.work-process-section {
+  background-color: #fff;
+  padding: 100px 0;
+  text-align: center;
+
+  h6 {
+    color: #ff4d00;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #222;
+  }
+
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .step {
+    background: #f9f9f9;
+    border-radius: 16px;
+    padding: 30px 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+
+    &:hover {
+      background: #ff4d00;
+      color: #fff;
+      transform: translateY(-5px);
+    }
+
+    .icon {
+      width: 70px;
+      height: 70px;
+      margin: 0 auto 20px;
+      background: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: background 0.3s ease;
+
+      img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    &:hover .icon {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    h4 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    &:hover p {
+      color: #fff;
+    }
+  }
+}
+.clients-section {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 80px 0;
+
+  h6 {
+    font-size: 1rem;
+    color: #111;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e85b36;
+    margin-bottom: 50px;
+    line-height: 1.4;
+  }
+
+  .clients-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .clients-logos img {
+    width: 140px;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%);
+    cursor: pointer;
+  }
+
+  .clients-logos img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .clients-logos {
+      gap: 30px;
+    }
+    .clients-logos img {
+      width: 100px;
     }
   }
 }
