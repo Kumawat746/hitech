@@ -1,0 +1,90 @@
+.footer {
+  background: #f8f8f8;
+  border-top: 1px solid #222;
+  padding: 30px 60px;
+  font-family: Arial, sans-serif;
+  color: #000;
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 25px;
+    margin-bottom: 15px;
+
+    .footer-col {
+      flex: 1;
+      min-width: 250px;
+      margin: 10px;
+
+      h3 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin: 3px 0;
+        font-size: 14px;
+        line-height: 1.4;
+      }
+    }
+
+    .logo-col h2 {
+      font-size: 22px;
+      font-weight: 700;
+
+      span {
+        background: #000;
+        color: #fff;
+        padding: 2px 8px;
+        margin-left: 4px;
+      }
+    }
+
+    .inquiry-col {
+      text-align: left;
+
+      .contact-btn {
+        background: #f15a24;
+        border: none;
+        color: #fff;
+        padding: 10px 25px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 10px;
+        transition: 0.3s ease;
+
+        &:hover {
+          background: #d94a1f;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    p {
+      font-size: 13px;
+      color: #333;
+      margin: 0;
+    }
+
+    .go-up {
+      color: #000;
+      font-size: 13px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #f15a24;
+      }
+    }
+  }
+}

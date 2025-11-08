@@ -1,0 +1,35 @@
+<section class="contact-section">
+  <div class="contact-container">
+    <!-- Left Side - Contact Form -->
+    <div class="contact-form">
+      <h4>Contact Us</h4>
+      <h2>For Inquiries or Questions</h2>
+      <p>
+        Please use the form or call us on Phone: <strong>0172-4599441</strong><br />
+        Mobile: <strong>+91 88394 55155</strong>
+      </p>
+
+      <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+        <div class="form-row">
+          <input type="text" name="firstName" placeholder="First Name" [(ngModel)]="contactData.firstName" />
+          <input type="text" name="lastName" placeholder="Last Name" [(ngModel)]="contactData.lastName" />
+        </div>
+
+        <div class="form-row">
+          <input type="email" name="email" placeholder="Email*" required [(ngModel)]="contactData.email" />
+          <input type="text" name="subject" placeholder="Subject" [(ngModel)]="contactData.subject" />
+        </div>
+
+        <textarea name="message" rows="4" placeholder="Leave us a message..." [(ngModel)]="contactData.message"></textarea>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+
+    <!-- Right Side - Image -->
+    <div class="contact-image">
+<img src="assets/contact_office.jpg" alt="Contact Office" />
+</div>
+
+  </div>
+</section>
