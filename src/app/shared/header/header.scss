@@ -1,26 +1,60 @@
 .site-header {
-  background: #0d1b2a;
-  color: #fff;
-  padding: 15px 30px;
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 15px 50px;
+  border-bottom: 2px solid #ccc;
+}
 
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    span {
-      color: #00b4d8;
-    }
-  }
+/* Logo Style */
+.logo {
+  text-align: center;
+  border: 1px solid #000;
+  padding: 8px 20px;
+}
 
-  nav a {
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
-    font-weight: 500;
-    &:hover {
-      color: #00b4d8;
-    }
-  }
+.logo h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.logo p {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-size: 15px;
+  padding: 3px 6px;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  align-items: center;
+  background: #8a8a8a; /* gray bar */
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* Nav Links */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 35px; /* Increased size */
+  font-size: 17px;    /* Larger font */
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background: #fdfdfd;
+  color: #050505;
+}
+
+/* Call Now Button */
+nav .call-btn {
+  background: #ff5722;
+  color: #000;
+  font-weight: bold;
 }
