@@ -40,16 +40,33 @@
 }
 
 /* Image */
+/* Image and Video Container */
 .service-img {
   flex: 1;
-}
-
-.service-img img {
+  position: relative;
   width: 100%;
+  max-width: 550px;
+  aspect-ratio: 16 / 9; /* keeps consistent height for all media */
+  overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  object-fit: cover;
 }
+
+/* Common styles for both images and videos */
+.service-img img,
+.service-img video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Optional: add smooth fade-in for better UX */
+.service-img video {
+  transition: opacity 0.6s ease-in-out;
+}
+
 
 /* Text */
 .service-text {

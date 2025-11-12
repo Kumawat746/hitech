@@ -1,3 +1,4 @@
+/* 🌐 HEADER BASE */
 .site-header {
   background: #fff;
   display: flex;
@@ -7,7 +8,7 @@
   border-bottom: 2px solid #ccc;
 }
 
-/* Logo Style */
+/* 🧩 Logo */
 .logo {
   text-align: center;
   border: 1px solid #000;
@@ -28,33 +29,47 @@
   padding: 3px 6px;
 }
 
-/* Navigation */
+/* 🧭 Navigation */
 nav {
   display: flex;
   align-items: center;
-  background: #8a8a8a; /* gray bar */
+  background: #8a8a8a; /* Gray bar */
   border-radius: 4px;
   overflow: hidden;
 }
 
-/* Nav Links */
+/* 🔗 Nav Links */
 nav a {
   color: #fff;
   text-decoration: none;
-  padding: 20px 35px; /* Increased size */
-  font-size: 17px;    /* Larger font */
+  padding: 18px 35px;
+  font-size: 17px;
   font-weight: 500;
-  transition: background 0.3s, color 0.3s;
+  transition: all 0.3s ease;
 }
 
+/* Hover Effect */
 nav a:hover {
-  background: #fdfdfd;
-  color: #050505;
+  background: #fff;
+  color: #000;
 }
 
-/* Call Now Button */
+/* ✅ Active Tab */
+nav a.active {
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+}
+
+/* 📞 Call Now Button */
 nav .call-btn {
   background: #ff5722;
   color: #000;
   font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+nav .call-btn:hover {
+  background: #e64a19;
+  color: #fff;
 }

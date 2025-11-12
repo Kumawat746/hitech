@@ -27,18 +27,24 @@
 }
 
 /* Main Image */
+/* Main Image / Video */
 .about-image {
   width: 100%;
   max-width: 1200px;
-  margin-bottom: 60px;
+  margin: 0 auto 60px auto; /* centers the section */
+  display: flex;
+  justify-content: center;
 }
 
-.about-image img {
+.about-image video {
   width: 100%;
+  height: auto;
+  max-height: 600px; /* keeps it same look as banner image */
   border-radius: 6px;
   object-fit: cover;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Mission Section */
 .mission-section {

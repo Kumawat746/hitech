@@ -5,11 +5,41 @@
   </div>
 
   <nav>
-    <a routerLink="/services">Services</a>
-    <a routerLink="/solutions">Solutions</a>
-    <a routerLink="/about">About Us</a>
-    <a routerLink="/careers">Careers</a>
-    <a routerLink="/contact">Contact</a>
+    <a
+      routerLink="/services"
+      routerLinkActive="active"
+      [class.disabled]="selectedTab && selectedTab !== 'services'"
+      (click)="selectTab('services')"
+      >Services</a
+    >
+    <a
+      routerLink="/solutions"
+      routerLinkActive="active"
+      [class.disabled]="selectedTab && selectedTab !== 'solutions'"
+      (click)="selectTab('solutions')"
+      >Solutions</a
+    >
+    <a
+      routerLink="/about"
+      routerLinkActive="active"
+      [class.disabled]="selectedTab && selectedTab !== 'about'"
+      (click)="selectTab('about')"
+      >About Us</a
+    >
+    <a
+      routerLink="/careers"
+      routerLinkActive="active"
+      [class.disabled]="selectedTab && selectedTab !== 'careers'"
+      (click)="selectTab('careers')"
+      >Careers</a
+    >
+    <a
+      routerLink="/contact"
+      routerLinkActive="active"
+      [class.disabled]="selectedTab && selectedTab !== 'contact'"
+      (click)="selectTab('contact')"
+      >Contact</a
+    >
     <a class="call-btn" routerLink="/call">Call Now!</a>
   </nav>
 </header>
