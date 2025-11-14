@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, OnDestroy } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -110,4 +111,13 @@ export class Home implements AfterViewInit, OnDestroy {
       showSlide(current);
     }, 8000);
   }
+constructor(private router: Router) {}
+
+goToPage(path: string) {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  setTimeout(() => {
+    this.router.navigate([path]);
+  }, 300);
+}
 }

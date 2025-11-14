@@ -44,6 +44,26 @@
     <!-- Dots -->
     <div class="dots"></div>
   </div>
+<div style="padding: 20px 40px 0 40px; text-align: left;">
+
+  <h3 style="
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    color: #333;">
+    Building Is What We Do
+  </h3>
+
+  <h3 style="
+    font-size: 36px;
+    font-weight: 700;
+    margin: 10px 0 0 0;
+    color: #f05622;
+    line-height: 1.3;">
+    Hitech Infosystem is a <br> Software Development Firm
+  </h3>
+</div>
+
 
   <!-- Project 1 -->
   <div class="project">
@@ -136,55 +156,67 @@
   </div>
 </section>
 
-
-<section class="work-process-section">
-  <div class="container">
-    <h6>Our Work Process</h6>
-    <h2>We Follow a Simple and Effective Workflow</h2>
-
-    <div class="process-steps">
-      <div class="step">
-        <div class="icon"><img src="assets/androids.png" alt=""></div>
-        <h4>Android Apps Development</h4>
-      </div>
-
-      <div class="step">
-        <div class="icon"><img src="assets/software.png" alt=""></div>
-        <h4>Software Applications</h4>
-      </div>
-
-      <div class="step">
-        <div class="icon"><img src="assets/ios.png" alt=""></div>
-        <h4>IOS Applications Development</h4>
-      </div>
-
-      <div class="step">
-        <div class="icon"><img src="assets/aws.png" alt=""></div>
-        <h4>Amazon Web Services</h4>
-      </div>
-
-      <div class="step">
-        <div class="icon"><img src="assets/native.png" alt=""></div>
-        <h4>Native Development</h4>
-      </div>
-
-      <div class="step">
-        <div class="icon"><img src="assets/arvr.png" alt=""></div>
-        <h4>AR/VR Development</h4>
-      </div>
-
-      <div class="step">
-        <div class="icon"><img src="assets/seo.png" alt=""></div>
-        <h4>Search Media Optimization</h4>
-      </div>
-
-      <div class="step">
-        <div class="icon"><img src="assets/social.png" alt=""></div>
-        <h4>Social Media Marketing</h4>
-      </div>
+<section class="services-section">
+  <div class="services-header">
+    <div class="text-area">
+      <h6>Our Services</h6>
+      <h2>
+        We Offer a Range of Services <br />
+        to Meet Your Needs
+      </h2>
     </div>
   </div>
+
+  <!-- Services Grid -->
+  <div class="services-grid">
+
+      <!-- EMPTY BOX to shift Row-1 -->
+    <div class="service-box empty-box"></div>
+
+    <div class="service-box" (click)="goToPage('/android')">
+      <img src="assets/androids.png" alt="Android" />
+      <h4><span>Android Apps Development</span></h4>
+    </div>
+
+    <div class="service-box" (click)="goToPage('/software')">
+      <img src="assets/software.png" alt="Software" />
+      <h4><span>Software Applications</span></h4>
+    </div>
+
+    <div class="service-box" (click)="goToPage('/ios')">
+      <img src="assets/ios.png" alt="iOS" />
+      <h4><span>iOS Applications Development</span></h4>
+    </div>
+
+    <div class="service-box" (click)="goToPage('/aws')">
+      <img src="assets/aws.png" alt="AWS" />
+      <h4><span>Amazon Web Services</span></h4>
+    </div>
+
+    <div class="service-box" (click)="goToPage('/native')">
+      <img src="assets/native.png" alt="Native" />
+      <h4><span>Native Development</span></h4>
+    </div>
+
+    <div class="service-box" (click)="goToPage('/arvr')">
+      <img src="assets/arvr.png" alt="AR/VR" />
+      <h4><span>AR/VR Development</span></h4>
+    </div>
+
+    <div class="service-box" (click)="goToPage('/seo')">
+      <img src="assets/seo.png" alt="SEO" />
+      <h4><span>Search Media Optimization</span></h4>
+    </div>
+
+    <div class="service-box" (click)="goToPage('/social')">
+      <img src="assets/social.png" alt="Social" />
+      <h4><span>Social Media Marketing</span></h4>
+    </div>
+
+  </div>
 </section>
+
+
 
 
 
@@ -200,12 +232,12 @@
 
     <div class="slider-wrapper">
       <div class="slide-track">
-        <div class="slide"><img src="assets/ios.png" alt="Project 1"></div>
-        <div class="slide"><img src="assets/native.png" alt="Project 2"></div>
+        <div class="slide"><img src="assets/ui_ux.jpg" alt="Project 1"></div>
+        <div class="slide"><img src="assets/mobile_apps.jpg" alt="Project 2"></div>
         <div class="slide"><video autoplay muted loop playsinline>
             <source src="assets/Amazon web.mp4" type="video/mp4">
           </video></div>
-        <div class="slide"><img src="assets/native.png" alt="Project 4"></div>
+        <div class="slide"><img src="assets/html.jpg" alt="Project 4"></div>
         <div class="slide"><img src="assets/ios.jpg" alt="Project 5"></div>
         <div class="slide"><video autoplay muted loop playsinline>
             <source src="assets/project6.mp4" type="video/mp4">

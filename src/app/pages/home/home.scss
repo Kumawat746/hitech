@@ -307,87 +307,111 @@
     }
   }
 }
-/* ✅ WORK PROCESS SECTION */
-.work-process-section {
-  background-color: #fff;
-  padding: 100px 0;
+
+
+
+.services-section {
+  padding: 80px 0;
+  background: #f8f9fb;
   text-align: center;
 }
 
-/* Section Headings */
-.work-process-section h6 {
-  color: #ff4d00;
-  font-weight: 600;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.work-process-section h2 {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 50px;
-  color: #222;
-}
-
-/* Grid Layout */
-.work-process-section .process-steps {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 35px;
-  justify-content: center;
-  align-items: stretch;
-}
-
-/* Each Step Box */
-.work-process-section .step {
-  background: #f9f9f9;
-  border-radius: 16px;
-  padding: 40px 25px;
-  transition: all 0.3s ease;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-  cursor: pointer;
-}
-
-/* Icon Box */
-.work-process-section .step .icon {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 20px;
-  background: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-/* Icon Image */
-.work-process-section .step .icon img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-}
-
-/* Hover Effect for Icon */
-.work-process-section .step:hover .icon {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-/* Step Title */
-.work-process-section .step h4 {
+/* Heading */
+.services-header h6 {
+  color: #f05622;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
+}
+
+.services-header h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 50px;
   line-height: 1.4;
 }
 
-/* Step Description */
-.work-process-section .step p {
-  font-size: 15px;
-  line-height: 1.6;
-  color: #555;
+/* Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  padding: 0 40px;
+}
+
+/* Service Box */
+.service-box {
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e4e4e4;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  text-align: center;
+  height: 180px;                 /* Set equal height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Icon */
+.service-box img {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 12px auto;
+  object-fit: contain;
+  transition: 0.3s ease;
+}
+.empty-box {
+  visibility: hidden;
+}
+
+/* Hover Image zoom */
+.service-box:hover img {
+  transform: scale(1.18);
+}
+
+/* Text underline */
+.service-box h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+  line-height: 1.4;
+
+  text-decoration: underline;
+  text-decoration-color: #000000;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+/* clean hover (no underline change) */
+.service-box h4:hover {
+  text-decoration: underline !important;
+}
+
+/* Hover box effect */
+.service-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-box {
+    height: 160px;
+  }
 }
 
 
